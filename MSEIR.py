@@ -125,9 +125,9 @@ class MSEIR:
         fig.add_trace(go.Scatter(x=xT, y=data['mInf'], opacity=0.3,name='mInf', line=lines[1]), row=3, col=1)
         fig.add_trace(go.Scatter(x=xT, y=data['rInf'], opacity=0.6,name='rInf', line=lines[2]), row=3, col=1)
         
-        fig.update_yaxes(title_text="u(t)", row=1, col=1, nticks=3, showgrid=False)
-        fig.update_yaxes(title_text="SEIHRD, Q", row=2, col=1, nticks=3,showgrid=False)
-        fig.update_yaxes(title_text="Inf(t)", row=3, col=1, nticks=3, showgrid=False)
+        fig.update_yaxes(title_text="u(t)", row=1, col=1, nticks=6, showgrid=False)
+        fig.update_yaxes(title_text="SEIHRD, Q", row=2, col=1, nticks=6,showgrid=False)
+        fig.update_yaxes(title_text="Inf(t)", row=3, col=1, nticks=6, showgrid=False)
         
         fig.update_layout(height=size[0], width=size[1],
                           legend_orientation="h", legend={'x':0, 'y':1.06, 'itemsizing': 'constant'},
